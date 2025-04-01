@@ -2,7 +2,7 @@
   "name": "@dotenvc/strings",
   "module": "index.ts",
   "type": "module",
-  "version": "0.0.0-test",
+  "version": "0.0.1-test",
   "author": "DotEnv Consulting <https://github.com/dot-env>",
   "license": "MIT",
   "devDependencies": {
