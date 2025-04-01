@@ -16,7 +16,9 @@ jobs:
         with:
           bun-version: latest
       - run: bun install
+        working-directory: strings
       - run: bun test
+        working-directory: strings
 
   publish-npm:
     needs: build
@@ -27,7 +29,9 @@ jobs:
         with:
           bun-version: latest
       - run: bun install
+        working-directory: strings
       - run: bun publish
+        working-directory: strings
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
           NPM_CONFIG_TOKEN : ${{ secrets.npm_token }}
