@@ -1,0 +1,28 @@
+{
+  "name": "@dotenvc/strings",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.0-test",
+  "author": "DotEnv Consulting <https://github.com/dot-env>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dot-env/js-packages.git"
+  },
+  "keywords": [
+    "string",
+    "extensions",
+    "prototype",
+    "typescript",
+    "utilities"
+  ]
+}
