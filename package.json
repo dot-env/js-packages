@@ -1,7 +1,9 @@
 {
-  "name": "strings",
+  "name": "@dotenvc/strings",
   "module": "index.ts",
   "type": "module",
+  "author": "Axolem <https://github.com/axolem>",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
   },
