@@ -1,6 +1,6 @@
 {
   "name": "@dotenvc/async-await",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal utility for Go-style error handling in async/await TypeScript code. Includes retries, custom error handling, and optional logging.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",

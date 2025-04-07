@@ -15,7 +15,7 @@
     "prepare": "bun run build --verbose"
   },
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "DotEnv Consulting <https://github.com/dot-env>",
   "license": "MIT",
   "devDependencies": {
