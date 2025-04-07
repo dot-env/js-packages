@@ -1,9 +1,11 @@
 {
-  "name": "@dotenvc/strings",
-  "description": "This package extends the JavaScript `String` prototype with additional methods inspired by Python's string operations, providing useful functionality for string manipulation.",
+  "name": "@dotenvc/async-await",
+  "version": "1.0.0",
+  "description": "A minimal utility for Go-style error handling in async/await TypeScript code. Includes retries, custom error handling, and optional logging.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -14,15 +16,18 @@
     "build": "tsc",
     "prepare": "bun run build"
   },
-  "type": "module",
-  "version": "1.0.0",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "DotEnv Consulting <https://github.com/dot-env>",
   "license": "MIT",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -32,10 +37,13 @@
     "url": "https://github.com/dot-env/js-packages.git"
   },
   "keywords": [
-    "string",
-    "extensions",
-    "prototype",
+    "async",
+    "await",
+    "go-style",
+    "error handling",
     "typescript",
-    "utilities"
+    "utility",
+    "promise",
+    "tuple"
   ]
 }

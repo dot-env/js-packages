@@ -1,0 +1,13 @@
+*.test.*
+.gitignore
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.*
+*.spec.*
+
+# IDE/Editor folders
+.vscode/
+.idea/
