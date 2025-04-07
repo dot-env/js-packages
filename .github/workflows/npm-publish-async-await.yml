@@ -1,4 +1,4 @@
-name: Bun Package
+name: async-await npm package
 
 on:
     push:
