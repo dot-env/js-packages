@@ -6,24 +6,10 @@ name: strings npm package
 on:
   push:
     tags:
-      - 'strings*' 
+      - "strings*"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-      - run: bun install
-        working-directory: strings
-
-      - run: bun test
-        working-directory: strings
-
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,8 +24,11 @@ jobs:
       - run: bun run prepare
         working-directory: strings
 
+      - run: bun test
+        working-directory: strings
+
       - run: bun publish
         working-directory: strings
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-          NPM_CONFIG_TOKEN : ${{ secrets.npm_token }}
+          NPM_CONFIG_TOKEN: ${{ secrets.npm_token }}

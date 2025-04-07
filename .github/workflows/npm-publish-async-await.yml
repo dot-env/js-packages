@@ -1,13 +1,12 @@
 name: async-await npm package
 
 on:
-    push:
-      tags:
-        - 'async-await*' 
-     
+  push:
+    tags:
+      - "async-await*"
 
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,20 +19,7 @@ jobs:
         working-directory: async-await
 
       - run: bun test
-        working-directory: async-await
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - run: bun install
-        working-directory: async-await
+        working-directory: strings
 
       - run: bun run prepare
         working-directory: async-await
