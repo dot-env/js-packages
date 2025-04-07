@@ -2,17 +2,17 @@
   "name": "@dotenvc/strings",
   "description": "This package extends the JavaScript `String` prototype with additional methods inspired by Python's string operations, providing useful functionality for string manipulation.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "module": "dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
-    "build": "tsc",
-    "prepare": "bun run build"
+    "build": "tsc --build --verbose",
+    "prepare": "bun run build --verbose"
   },
   "type": "module",
   "version": "1.0.0",

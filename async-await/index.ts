@@ -1,4 +1,4 @@
-type ToOptions = {
+export type ToOptions = {
     label?: string;
     retries?: number;
     delayMs?: number;

@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A minimal utility for Go-style error handling in async/await TypeScript code. Includes retries, custom error handling, and optional logging.",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "module": "dist/index.js",
   "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     }
   },
   "scripts": {
